@@ -1,0 +1,10 @@
+<section>
+  {{textarea placeholder="Add a title" value=titleCopy}}
+  {{textarea placeholder="Add a body" value=bodyCopy}}
+</section>
+
+<section>
+  <button {{action 'newPost'}}>Add Post</button>
+  <h2>{{titleCopy}}</h2>
+  {{bodyCopy}}
+</section>

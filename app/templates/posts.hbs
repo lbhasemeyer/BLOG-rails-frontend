@@ -1,6 +1,16 @@
-{{outlet}}
+{{#link-to 'posts.new'}}
+Make a new Post
+{{/link-to}}
+
+{{#link-to 'posts'}}
+Posts
+{{/link-to}}
 
 {{#each post in model}}
-  <h1>{{post.title}}</h1>
-  {{post.body}}
+  {{#link-to 'post' post}}
+    <h1>{{post.title}}</h1>
+    <button {{action 'deletePost' post.id}}>Delete Note</button>
+  {{/link-to}}
 {{/each}}
+
+{{outlet}}
