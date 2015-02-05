@@ -1,3 +1,24 @@
-<h2 id="title">Blog Posts</h2>
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+<header>
+  <h1 id="title">Blog Posts</h1>
+
+  <div class="header-links">
+    {{#link-to 'posts.new'}}
+      New Post
+    {{/link-to}}
+
+    {{#link-to 'posts'}}
+      Posts
+    {{/link-to}}
+
+    {{#link-to 'posts.search'}}
+      Search
+    {{/link-to}}
+  </div>
+
+</header>
+
+
 
 {{outlet}}

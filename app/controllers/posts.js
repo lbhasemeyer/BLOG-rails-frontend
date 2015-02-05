@@ -6,7 +6,7 @@ export default Ember.ObjectController.extend({
       var post = this.store.find('post', id).then(function(post) {
       post.deleteRecord();
       post.save()
-    });
+      });
+    }
   }
-}
 });

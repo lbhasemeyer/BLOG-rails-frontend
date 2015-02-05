@@ -1,10 +1,17 @@
-<section>
-  {{textarea placeholder="Add a title" value=titleCopy}}
-  {{textarea placeholder="Add a body" value=bodyCopy}}
-</section>
 
-<section>
-  <button {{action 'newPost'}}>Add Post</button>
-  <h2>{{titleCopy}}</h2>
-  {{bodyCopy}}
-</section>
+<div class="make-a-post">
+  <section>
+    <div class="title-area">
+      {{textarea placeholder="Add a title" value=titleCopy}}
+    </div>
+    <div class="body-area">
+      {{textarea placeholder="Add a body" value=bodyCopy}}
+    </div>
+  </section>
+
+  <section>
+    <button {{action 'newPost'}}>Add Post</button>
+    <h2>{{titleCopy}}</h2>
+    {{bodyCopy}}
+  </section>
+</div>

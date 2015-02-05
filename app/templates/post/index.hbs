@@ -1,6 +1,11 @@
-<h1>{{title}}</h1>
-{{body}}
 
-{{#link-to 'post.edit' this}}
-Edit Post
-{{/link-to}}
+<div class="show-post">
+  <h2>{{title}}</h2>
+  <p>{{body}}</p>
+
+  {{#link-to 'post.edit' this}}
+    Edit Post
+  {{/link-to}}
+
+  <button {{action 'deletePost' this}}>Delete Post</button>
+</div>

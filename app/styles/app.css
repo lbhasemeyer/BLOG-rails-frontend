@@ -1,3 +1,104 @@
 html, body {
   margin: 20px;
+  font-family: 'Indie Flower', cursive;
+  background: #F0F8EA;
+}
+
+header {
+  text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #E4572E;
+  text-decoration: none;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+h1 {
+  display: inline-block;
+  color: #676c6f;
+}
+
+h2 {
+  color: #E4572E;
+}
+
+p {
+  color: #676c6f;
+}
+
+button {
+  background: #676c6f;
+  color: white;
+  border: none;
+}
+
+.show-post {
+  border: 2px solid #676c6f;
+  width: 50%;
+  float: right;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px;
+  margin-right: 5%;
+}
+
+.edit-a-post {
+  border: 2px solid #676c6f;
+  width: 50%;
+  float: right;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px;
+  margin-right: 5%;
+}
+
+.make-a-post {
+  border: 2px solid #676c6f;
+  width: 50%;
+  float: right;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px;
+  margin-right: 5%;
+}
+
+.search-area {
+  border: 2px solid #676c6f;
+  width: 50%;
+  float: right;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px;
+  margin-right: 5%;
+  display: block;
+}
+
+textarea {
+  display: block;
+  resize: none;
+  background: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 97%;
+  outline: none;
+  margin-bottom: 25px;
+  min-height: 75px;
+}
+
+.save-post {
+  text-align: center;
+}
+
+.all-posts {
+  display: inline-block;
+  margin-top: 50px;
+  width: 25%;
+  margin-left: 5%;
+}
+
+.a-post {
+  border: 1px dashed #676c6f;
+  padding: 10px;
 }

@@ -1,8 +1,11 @@
-<section>
-  {{textarea placeholder="New title" value=title}}
-  {{textarea placeholder="New body" value=body}}
-</section>
 
-<section>
-  <button {{action 'savePost' this}}>Save Post</button>
-</section>
+<div class="edit-a-post">
+  <section>
+    {{textarea placeholder="New title" value=title}}
+    {{textarea placeholder="New body" value=body}}
+  </section>
+
+  <section class="save-post">
+    <button {{action 'updatePost' this}}>Save Post</button>
+  </section>
+</div>

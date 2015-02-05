@@ -1,8 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.ObjectController.extend({
+
   actions: {
-    savePost: function(post) {
+    updatePost: function(post) {
       var title = this.get('title');
       var body = this.get('body');
 
@@ -15,4 +16,5 @@ export default Ember.ObjectController.extend({
       }
     }
   }
+  
 });
