@@ -1,0 +1,22 @@
+<div class="search-area">
+
+  {{input value=term}}
+  <button {{action 'doSearch'}} >Search</button>
+
+  <p>
+    The user searched for..  {{term}}
+  </p>
+</div>
+
+<div class="results">
+  {{#each post in model}}
+    <article class="one-post">
+      <h2>{{post.title}}</h2>
+      {{post.body}}
+    </article>
+    {{else}}
+    <article class="one-post">
+      Sorry, try again!
+    </article>
+  {{/each}}
+</div>
