@@ -1,13 +1,11 @@
-
-
 <div class="all-posts">
-  
+
   {{#each post in model}}
     <div class="a-post">
       {{#link-to 'post' post}}
         <h2>{{post.title}}</h2>
-        <button {{action 'deletePost' post.id}}>Delete Note</button>
       {{/link-to}}
+        <button {{action 'deletePost' post.id}}>Delete Note</button>
     </div>
   {{/each}}
 </div>

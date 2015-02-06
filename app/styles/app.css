@@ -111,3 +111,8 @@ textarea {
 .one-post:first-of-type {
     margin-top: 50px;
 }
+
+
+.one-post {
+  margin-right: 20%;
+}
