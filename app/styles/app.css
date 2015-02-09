@@ -1,7 +1,7 @@
 html, body {
   margin: 20px;
   font-family: 'Indie Flower', cursive;
-  background: #F0F8EA;
+  background: #f4f9f2;
 }
 
 header {
@@ -73,6 +73,10 @@ button {
   padding: 15px;
   margin-right: 5%;
   display: block;
+}
+
+#ember509, button {
+  float: right;
 }
 
 .results {

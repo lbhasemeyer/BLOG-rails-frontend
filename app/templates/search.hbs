@@ -11,8 +11,10 @@
 <div class="results">
   {{#each post in model}}
     <article class="one-post">
-      <h2>{{post.title}}</h2>
-      {{post.body}}
+      {{#link-to 'post' post}}
+        <h2>{{post.title}}</h2>
+      {{/link-to}}
+        {{post.body}}
     </article>
   {{else}}
     <article class="one-post">
