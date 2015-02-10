@@ -10,15 +10,15 @@
 
 <div class="results">
   {{#each post in model}}
-    <article class="one-post">
-      {{#link-to 'post' post}}
-        <h2>{{post.title}}</h2>
-      {{/link-to}}
-        {{post.body}}
-    </article>
-  {{else}}
-    <article class="one-post">
-      Sorry, try again!
-    </article>
+      <article class="one-post">
+        {{#link-to 'post' post}}
+          <h2>{{post.title}}</h2>
+        {{/link-to}}
+          {{post.body}}
+      </article>
+    {{else}}
+      <article class="one-post">
+        Sorry, try again!
+      </article>
   {{/each}}
 </div>

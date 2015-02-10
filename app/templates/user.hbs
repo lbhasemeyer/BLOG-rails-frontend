@@ -1,0 +1,17 @@
+<div class="user-show">
+  <h1 class="user-name">{{firstName}} {{lastName}}</h1>
+  <br>
+  <h1>Posts:</h1>
+  {{#each post in posts}}
+    {{#link-to 'post' post}}
+      <p>{{post.title}}</p>
+    {{/link-to}}
+      <p>{{post.body}}</p>
+  {{/each}}
+  <br>
+  <h1>Comments:</h1>
+  {{#each comment in comments}}
+    <p>{{comment.body}}</p>
+  {{/each}}
+
+</div>

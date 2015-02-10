@@ -20,11 +20,12 @@ h1 {
   color: #676c6f;
 }
 
-h2 {
+h2, .user-name {
   color: #E4572E;
 }
 
 p {
+  margin: 5px;
   color: #676c6f;
 }
 
@@ -55,6 +56,16 @@ button {
 }
 
 .make-a-post {
+  border: 2px solid #676c6f;
+  width: 50%;
+  float: right;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px;
+  margin-right: 5%;
+}
+
+.user-show {
   border: 2px solid #676c6f;
   width: 50%;
   float: right;

@@ -13,8 +13,9 @@ Router.map(function() {
       this.route('edit', { path: '/edit' });
     });
   });
-  this.route("users");
-  this.route("comments");
+  this.resource('users', function() {
+    this.resource('user', { path:'/:user_id'});
+  });
 });
 
 export default Router;
