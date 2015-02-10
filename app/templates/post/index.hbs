@@ -1,11 +1,22 @@
 
 <div class="show-post">
   <h2>{{title}}</h2>
+  <p>by {{this.user.firstName}} {{this.user.lastName}}</p>
   <p>{{body}}</p>
 
-  {{#link-to 'post.edit' this}}
-    Edit Post
-  {{/link-to}}
+  <section class="edit-post">
+    {{#link-to 'post.edit' this}}
+      Edit Post
+    {{/link-to}}
+  </section>
 
   <button {{action 'deletePost' this}}>Delete Post</button>
+
+  <h2 class="comments">Comments</h2>
+
+  {{#each comment in comments}}
+    {{comment.body}}
+    <p>-{{comment.user.firstName}} {{comment.user.lastName}}</p>
+  {{/each}}
+
 </div>

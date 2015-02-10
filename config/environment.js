@@ -19,7 +19,7 @@ module.exports = function(environment) {
       'font-src': "'self' http://fonts.gstatic.com",
       'connect-src': "'self' localhost:3002",
       'img-src': "'self'",
-      'style-src': "'self' unsafe-inline' http://fonts.googleapis.com",
+      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
       'media-src': "'self'"
     },
 

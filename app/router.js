@@ -13,6 +13,8 @@ Router.map(function() {
       this.route('edit', { path: '/edit' });
     });
   });
+  this.route("users");
+  this.route("comments");
 });
 
 export default Router;

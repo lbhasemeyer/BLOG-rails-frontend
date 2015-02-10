@@ -4,8 +4,9 @@
     <div class="a-post">
       {{#link-to 'post' post}}
         <h2>{{post.title}}</h2>
+        <p> by {{post.user.firstName}} {{post.user.lastName}}</p>
       {{/link-to}}
-        <button {{action 'deletePost' post.id}}>Delete Note</button>
+        <button {{action 'deletePost' post.id}}>Delete Post</button>
     </div>
   {{/each}}
 </div>
