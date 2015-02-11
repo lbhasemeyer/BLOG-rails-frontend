@@ -20,7 +20,7 @@ h1 {
   color: #676c6f;
 }
 
-h2, .user-name {
+h2, .user-name, .from-blog-post, .user-post-title {
   color: #E4572E;
 }
 
@@ -65,6 +65,18 @@ button {
   margin-right: 5%;
 }
 
+.search-area {
+  border: 2px solid #676c6f;
+  width: 25%;
+  float: left;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: block;
+}
+
 .user-show {
   border: 2px solid #676c6f;
   width: 50%;
@@ -75,18 +87,7 @@ button {
   margin-right: 5%;
 }
 
-.search-area {
-  border: 2px solid #676c6f;
-  width: 25%;
-  float: left;
-  display: inline-block;
-  margin-top: 50px;
-  padding: 15px;
-  margin-right: 5%;
-  display: block;
-}
-
-button, .edit-post {
+#ember509, button {
   float: right;
 }
 
@@ -111,14 +112,27 @@ textarea {
   text-align: center;
 }
 
-.all-posts {
-  display: inline-block;
-  margin-top: 50px;
+.sidebar {
+  float: left;
   width: 25%;
+}
+
+.all-posts {
+  margin-top: 50px;
   margin-left: 5%;
 }
 
-.a-post, .one-post {
+.one-post {
+  border: 1px dashed #676c6f;
+  width: 200%;
+  float: right;
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px;
+  margin-right: 5%;
+}
+
+.a-post {
   border: 1px dashed #676c6f;
   padding: 10px;
 }
@@ -129,8 +143,4 @@ textarea {
 
 .one-post {
   margin-right: 20%;
-}
-
-.comments {
-  margin-top: 50px;
 }

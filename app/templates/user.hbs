@@ -4,7 +4,7 @@
   <h1>Posts:</h1>
   {{#each post in posts}}
     {{#link-to 'post' post}}
-      <p>{{post.title}}</p>
+      <p class="user-post-title">{{post.title}}</p>
     {{/link-to}}
       <p>{{post.body}}</p>
   {{/each}}
@@ -12,6 +12,6 @@
   <h1>Comments:</h1>
   {{#each comment in comments}}
     <p>{{comment.body}}</p>
+    <p class="from-blog-post">(From blog post: {{comment.post.title}})</p>
   {{/each}}
-
 </div>
