@@ -5,7 +5,6 @@ module.exports = function(environment) {
     modulePrefix: 'blog',
     environment: environment,
     baseURL: '/',
-    adapterURL: process.env.ADAPTER_URL,
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -18,7 +17,7 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self'",
       'font-src': "'self' http://fonts.gstatic.com",
-      'connect-src': "'self' localhost:3002 http://infinite-peak-6463.herokuapp.com/",
+      'connect-src': "'self' localhost:3002",
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
       'media-src': "'self'"
